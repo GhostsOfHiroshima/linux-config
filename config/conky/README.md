@@ -8,14 +8,13 @@ For openbox, this is the config path: ```~/.config/conky/conky.conf```
 Using an exchange script to update the exchange for USD/RON and EURO/RON every
 hour
 
-Add the ```exchange_conky.py``` script to ```~/config/openbox/autostart``` in
-to run it
+Add the ```exchange_conky.py``` script to ```~/config/openbox/autostart``` in order to run it
 
-In case you don't want it, just remove the ```${color}Exchange $hr``` and what's
-after it
+
+In case you don't want it, just remove the ```${color}Exchange $hr``` and what'safter it
 
 --------------------
 
-<p align="center"> 
+<p align="center">
 <img src="https://image.ibb.co/mMeEy7/conky.png">
 </p>
