@@ -2,8 +2,5 @@
 
 Replace your config file with this config file.
 
-On openbox the path of the is
-```
-~/.config/conky/conky.conf
-```
+For openbox, this is the config path: ```~/.config/conky/conky.conf```
 
