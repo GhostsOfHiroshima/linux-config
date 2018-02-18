@@ -13,6 +13,7 @@ to run it
 
 In case you don't want it, just remove the ```${color}Exchange $hr``` and what's
 after it
+
 --------------------
 
 <p align="center"> 
