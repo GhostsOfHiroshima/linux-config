@@ -1,6 +1,6 @@
 ## Wallpaper changer
 
-Script that changes wallpapers after X amount of minutes.
+Script that changes wallpaper every X minutes
 
 Dependencies:
 
