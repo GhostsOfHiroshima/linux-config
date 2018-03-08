@@ -2,9 +2,10 @@
 Here you'll find configuration files for different programs that I'm using on my
 ArchBang Linux machine.
 
-## Programs
+## What it includes
 - nano
 - conky
+- wallpaper changer
 
 
 ## License
