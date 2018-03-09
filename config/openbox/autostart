@@ -1,0 +1,53 @@
+# config manager
+compton &	# awesome (transparency, shadows, etc)
+
+# panel
+tint2 &
+
+# wallpaper
+/home/icebox/Documents/scripts/change_wallpaper.py &
+
+# Enable as required
+#xbacklight -set 100 &
+#/usr/bin/synclient TouchpadOff=1 &
+#setxkbmap us &
+
+# Onscreen system stats
+(sleep 2 && conky) &
+
+# Network Manager Applet
+(sleep 2 && nm-applet) &
+
+# File manager dameon mode
+#(sleep 2 && pcmanfm -d) &
+
+# Effects
+#(sleep 2 && compton -b) &
+
+# Volume
+(sleep 2 && volumeicon) &
+
+# CUSTOM
+# --------------------------
+# Clipit - clipboard manager
+(sleep 2 && clipit) &
+# batterymon
+(sleep 2 && batterymon) &
+# touchpad personal config
+(sleep 2 && /usr/bin/bash /home/icebox/Documents/scripts/init-touchpad.sh) &
+# notify-send fix
+(sleep 2 && dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY) &
+
+# regular apps startup
+# thunderbird
+(sleep 20 ; thunderbird) &
+(sleep 2 && skypeforlinux) &			
+(sleep 6 && ssh -fNTD localhost:8081 vps1) &	# start proxy
+
+# conky usd/euro updater
+(sleep 20 ; /home/icebox/Documents/programming/scripts/exchange_conky.py >> /home/icebox/.config/conky/exchange_updater.log) &
+
+# disable mic
+# start always with mic disabled
+# look like with the new update, it's persisting between restarts
+#amixer sset Mic off &
