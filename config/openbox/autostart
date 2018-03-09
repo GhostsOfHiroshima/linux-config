@@ -1,5 +1,5 @@
 # config manager
-compton &	# awesome (transparency, shadows, etc)
+compton -b &	# awesome (transparency, shadows, etc)
 
 # panel
 tint2 &
