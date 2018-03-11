@@ -2,13 +2,13 @@
 # Wallpaper changer
 
 import os
-import os.path
 from random import choice
 from time import sleep
+import sys
 
 # pictures root folder
 PICTURES_FOLDER = '/home/icebox/Pictures/wallpapers'
-ROTATE_EVERY = 60	# minutes
+ROTATE_EVERY = 30	# minutes
 # valid extensions
 EXTENSIONS = [
 	'PNG',
@@ -47,6 +47,7 @@ def set_random_wallpaper():
 def main():
 	while True:
 		set_random_wallpaper()
+		if sys.argv[-1] == 'oneshot': return
 		sleep(60 * ROTATE_EVERY)
 	
 main()	
