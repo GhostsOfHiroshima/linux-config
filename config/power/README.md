@@ -10,3 +10,9 @@ Add two keyboard shortcuts, using [obkey](https://aur.archlinux.org/packages/obk
 For example add `CTRL+SHIFT+A` for **AC** and `CTRL+SHIFT+B` for **BAT**
 
 Script is just one liner: `sudo tlp $1 ; notify-send Power "Set to $1"`
+
+
+Battery status tray icon
+-----
+
+Using `batterymon` from AUR
