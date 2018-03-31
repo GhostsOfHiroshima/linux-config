@@ -6,6 +6,7 @@ ArchBang Linux machine.
 - nano
 - conky
 - wallpaper changer
+- others ...
 
 
 ## License
