@@ -9,7 +9,7 @@ UPDATE_EVERY = 60       # seconds
 def write_data(js):
     countryCode = js[1]['countryCode']
     city = js[1]['city']
-    if len(city) > 10: city = '{}...'.format(city[:10].strip())
+    if len(city) > 12: city = '{}...'.format(city[:12].strip())
     with open(CONFIG_FILE, 'w') as f:
         f.write(js[0] + '\n')
         f.write('{}, {}'.format(city, countryCode))
