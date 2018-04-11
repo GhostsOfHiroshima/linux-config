@@ -35,3 +35,15 @@ The script can be also set in `~/.config/openbox/autostart` with the forever arg
 `./public_ip.py forever` which will make the script run forever, so that if the VPN goes down, or you disconnect and reconnect to a different server, the IP and location will be also updated.
 
 To actually make use of the IP and location, I'm showing them in conky. Conky file can be found inside conky folder in this repo
+
+#### PPTP client
+
+For the PPTP, with the new reinstall of the OS I had some connection problems.
+
+First, make sure the firewall is enabled and started
+```bash
+systemctl enable iptables
+systemctl start iptables
+```
+
+Secondly, there's a script `pptp.sh` in the folder, run it as sudo to enable the firewall for PPTP connections, commands taken from [archbang wiki](https://wiki.archlinux.org/index.php/PPTP_server#iptables_firewall_configuration)
