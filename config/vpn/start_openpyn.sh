@@ -2,7 +2,7 @@
 # Start openpyn, called from openpyn.service
 
 # connect, using dedicated, from DE, with firewall `killswitch`
-/usr/bin/openpyn de -f -t 10 --dedicated &
+/usr/bin/openpyn $1 -f -t 10 --dedicated --allow 3031 &
 sleep 15        # give it 15 seconds to connect
 
 # get IP and location for conky
